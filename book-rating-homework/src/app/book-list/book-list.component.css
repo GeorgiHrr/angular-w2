@@ -1,0 +1,38 @@
+.mainPanel{
+    background-color: #9a9a9a;
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+}
+
+.infoPanel{
+    background-color: rgb(255, 0, 0);
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputPanel{
+    background-color: #00ff0d;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.ratingPanel{
+    background-color: #0000ff;
+    border: solid black 1px;
+    display: flex;
+}
+
+.button{
+    width: 100px;
+    height: 100px;
+}
