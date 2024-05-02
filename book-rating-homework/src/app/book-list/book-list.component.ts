@@ -21,19 +21,39 @@ export class BookListComponent {
 
     public bookCollection = [
         {
-            bookTitle: 'aaa', bookDescription: 'aa', bookAuthor: 'a', ratingList: [] as number[], averageRating: 0
+            bookTitle: 'Еманципирана магия', 
+            bookDescription: 'Еманципирана магия е роман в жанр хумористично фентъзи. Тя е третата по ред книга от поредицата на Тери Пратчет - Светът на диска.',
+            bookAuthor: 'Тери Пратчет', 
+            ratingList: [] as number[], 
+            averageRating: 0
         },
         {
-            bookTitle: 'sss', bookDescription: 'ss', bookAuthor: 's', ratingList: [] as number[], averageRating: 0
+            bookTitle: 'Жътварят', 
+            bookDescription: 'Жътварят е единайсeтият по ред роман от поредицата на Тери Пратчет „Светът на диска“.', 
+            bookAuthor: 'Тери Пратчет', 
+            ratingList: [] as number[], 
+            averageRating: 0
         },
         { 
-            bookTitle: 'ddd', bookDescription: 'dd', bookAuthor: 'd', ratingList: [] as number[], averageRating: 0
+            bookTitle: 'Пътеводител на галактическия стопаджия', 
+            bookDescription: 'Във всички версии, повествованието следва приключенията на Артър Дент, злочест англичанин, който заедно със своя приятел Форд Префект, извънземен от малка планета някъде около Бетелгейзе и сътрудник на Пътеводителя, успява да се спаси при разрушаването на Земята от бюрократичната извънземна раса на Вогоните. ', 
+            bookAuthor: 'Дъглас Адамс', 
+            ratingList: [] as number[], 
+            averageRating: 0
         },
         {
-            bookTitle: 'fff', bookDescription: 'ff', bookAuthor: 'f', ratingList: [] as number[], averageRating: 0
+            bookTitle: 'Приключенията на Шерлок Холмс', 
+            bookDescription: 'Приключенията на Шерлок Холмс е първият сборник с 12 разказа на писателя Артър Конан Дойл за известния детектив Шерлок Холмс.', 
+            bookAuthor: 'Артър Конан Дойл', 
+            ratingList: [] as number[], 
+            averageRating: 0
         },
         {
-            bookTitle: 'ggg', bookDescription: 'gg', bookAuthor: 'g', ratingList: [] as number[], averageRating: 0
+            bookTitle: 'Нарушаване на мира', 
+            bookDescription: 'Когато императорско семейство бъде намерено заклано, Божиите служители са призовани да разследват. Доказателствата сочат бунтовническа група, която се опитва да всее страх в самото сърце на империята. Инспектор Khlid започва мъчителен лов за отговорните, но когато по-голяма конспирация излиза наяве, тя се бори да се довери дори на служителите около нея.', 
+            bookAuthor: 'Даниел Б. Грийн', 
+            ratingList: [] as number[], 
+            averageRating: 0
         },
     ]
 
