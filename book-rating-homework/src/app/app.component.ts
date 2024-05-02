@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { BookListComponent } from './book-list/book-list.component';
 
@@ -13,5 +13,5 @@ import { BookListComponent } from './book-list/book-list.component';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'book-rating-homework';
+  
 }

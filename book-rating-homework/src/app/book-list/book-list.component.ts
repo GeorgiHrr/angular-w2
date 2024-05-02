@@ -1,5 +1,6 @@
-import { Component } from "@angular/core";
+import { Component} from "@angular/core";
 import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-book-list',
@@ -10,8 +11,9 @@ import { FormsModule } from '@angular/forms';
 })
 
 export class BookListComponent {
-
-    public index            = 0;    
+    public isEndScreen = false;
+    public isFinished = false;
+    public index            = 0;
 
     public modelTitle       = '';
     public modelDescription = '';
@@ -33,7 +35,6 @@ export class BookListComponent {
         {
             bookTitle: 'ggg', bookDescription: 'gg', bookAuthor: 'g', ratingList: [] as number[], averageRating: 0
         },
-
     ]
 
     public calculateRating(rating:number){
@@ -42,7 +43,6 @@ export class BookListComponent {
         let sum = 0;
         for (let i = 0; i < this.bookCollection[this.index].ratingList.length; i++) {
             sum += this.bookCollection[this.index].ratingList[i];
-            console.log(this.bookCollection[this.index].ratingList[i])
         }
         this.bookCollection[this.index].averageRating = sum/this.bookCollection[this.index].ratingList.length;
 
@@ -50,19 +50,35 @@ export class BookListComponent {
         this.nextBook();
     }
 
+    public rateAgain(){
+
+        this.isEndScreen = false;
+
+    }
+
+    public finish(){
+        this.isFinished = true;
+    }
+
     private nextBook(){
         this.index++;
 
         if (this.index >= this.bookCollection.length) {
             this.index = 0;
+            this.isEndScreen = true;
         }
     }
 
     private saveBookData(){
-
-        this.bookCollection[this.index].bookTitle       = this.modelTitle;
-        this.bookCollection[this.index].bookDescription = this.modelDescription;
-        this.bookCollection[this.index].bookAuthor      = this.modelAuthor;
+        if(this.modelTitle != ''){
+            this.bookCollection[this.index].bookTitle       = this.modelTitle;
+        }
+        if(this.modelDescription != ''){
+            this.bookCollection[this.index].bookDescription = this.modelDescription;
+        }
+        if(this.modelAuthor != ''){
+            this.bookCollection[this.index].bookAuthor      = this.modelAuthor;
+        }
         this.resetModelData();
     }
 
